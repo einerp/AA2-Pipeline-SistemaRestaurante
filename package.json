@@ -1,0 +1,8 @@
+{
+  "name": "aa2-pipeline-sistema-restaurante",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python scripts/dev_server.py"
+  }
+}
