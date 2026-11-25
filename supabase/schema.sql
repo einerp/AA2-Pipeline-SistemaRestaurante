@@ -25,5 +25,8 @@ create table if not exists public.pedidos (
 create index if not exists reservas_fecha_hora_idx on public.reservas (fecha, hora);
 create index if not exists pedidos_creado_en_idx on public.pedidos (creado_en desc);
 
+alter table public.reservas enable row level security;
+alter table public.pedidos enable row level security;
+
 -- La API usa la clave de servicio exclusivamente en el servidor de Vercel.
 -- No se crean políticas públicas ni se exponen secretos en el navegador.

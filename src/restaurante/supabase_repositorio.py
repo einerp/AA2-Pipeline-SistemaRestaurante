@@ -47,7 +47,7 @@ class RepositorioSupabase:
             },
         )
         try:
-            with urlopen(solicitud, timeout=10) as respuesta:  # nosec B310 - HTTPS validado
+            with urlopen(solicitud, timeout=10) as respuesta:  # nosec B310
                 contenido = respuesta.read().decode("utf-8")
         except HTTPError as exc:
             if exc.code == 409:
