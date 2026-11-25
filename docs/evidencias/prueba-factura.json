@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-11-24",
+  "autenticacion": true,
+  "factura": 1,
+  "subtotal": 41000,
+  "impuesto": 3280,
+  "total": 44280,
+  "detalles": 3,
+  "inventario_antes": {
+    "Bandeja paisa": 15,
+    "Limonada natural": 30,
+    "Café americano": 25
+  },
+  "inventario_despues": {
+    "Bandeja paisa": 14,
+    "Limonada natural": 29,
+    "Café americano": 24
+  },
+  "metodo": "Autenticación y RPC crear_factura mediante @supabase/supabase-js en Node.js"
+}

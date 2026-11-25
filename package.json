@@ -1,8 +1,27 @@
 {
   "name": "aa2-pipeline-sistema-restaurante",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
+  "description": "Sistema académico de restaurante con catálogo, autenticación, POS y facturación.",
   "scripts": {
-    "dev": "python scripts/dev_server.py"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/node/*.test.js",
+    "test:coverage": "node --experimental-test-coverage --test-coverage-lines=80 --test tests/node/*.test.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.5",
+    "@fontsource-variable/manrope": "^5.2.5",
+    "@supabase/supabase-js": "^2.49.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
